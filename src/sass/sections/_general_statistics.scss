@@ -1,0 +1,26 @@
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .calendar-wrapper {
+    margin: 40px 0;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    height: 40px;
+
+    .datepicker {
+      border: none;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.statistic {
+  margin-top: 40px;
+}
+
+.statistic-title {
+  margin-top: 40px;
+}

@@ -1,0 +1,45 @@
+@mixin center-object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin svg-image {
+  width: 15px;
+  height: 15px;
+  filter: invert(71%) sepia(0%) saturate(36%) hue-rotate(279deg) brightness(85%) contrast(89%);
+}
+
+@mixin flex-row {
+  display: flex;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+@mixin main-btn-dot {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+@mixin notification-dot {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  z-index: 1;
+  border-radius: 50%;
+}

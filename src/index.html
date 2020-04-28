@@ -6,40 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
-    <nav class="menu page__nav">
+    <nav class="menu page__nav menu--vertical">
         <div class="logo menu__logo">
             <h1 class="logo__name">Just do it</h1>
-        </div>
-        <div class="menu__hamburger">
-            <i class="fas fa-bars"></i>
+            <div class="logo__hamburger">
+                <i class="fas fa-bars logo__icon"></i>
+            </div>
         </div>
         <ul class="menu__list">
             <li class="menu__item">
-                <a href="#" class="menu__link"><img class="menu__image"
+                <a href="#" class="menu__link"><img class="menu__image menu__image--filter"
                         src="/images/general.svg" /><span>General</span></a>
             </li>
             <li class="menu__item">
-                <a href="#" class="menu__link"><img class="menu__image"
+                <a href="#" class="menu__link"><img class="menu__image menu__image--filter"
                         src="/images/details.svg" /><span>Details</span></a>
             </li>
             <li class="menu__item">
-                <a href="#" class="menu__link"><img class="menu__image" src="/images/links.svg" /><span>Links</span></a>
+                <a href="#" class="menu__link"><img class="menu__image menu__image--filter"
+                        src="/images/links.svg" /><span>Links</span></a>
             </li>
             <li class="menu__item">
-                <a href="#" class="menu__link"><img class="menu__image"
+                <a href="#" class="menu__link"><img class="menu__image menu__image--filter"
                         src="/images/banners.svg" /><span>Banners</span></a>
             </li>
             <li class="menu__item">
-                <a href="#" class="menu__link"> <img class="menu__image" src="/images/personaldata.svg" />
+                <a href="#" class="menu__link"> <img class="menu__image menu__image--filter"
+                        src="/images/personaldata.svg" />
                     <span>Personal Data</span></a>
             </li>
             <li class="menu__item">
-                <a href="#" class="menu__link"> <img class="menu__image" src="/images/payout.svg" />
+                <a href="#" class="menu__link"> <img class="menu__image menu__image--filter" src="/images/payout.svg" />
                     <span>Payout</span></a>
             </li>
         </ul>
@@ -47,31 +49,33 @@
             <h4 class="menu__title">Your Manager</h4>
             <ul class="menu__list">
                 <li class="menu__item menu__item--notification-dot">
-                    <a href="#" class="menu__link"><img src="/images/manager.png" alt=""><span>Mikhael E.</span></a>
+                    <a href="#" class="menu__link"><img class="menu__image menu__image--big" src="/images/manager.png"
+                            alt=""><span>Mikhael E.</span></a>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="main page__main">
         <nav class="menu main__nav menu--horizontal">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a href="#" class="menu__item"><img class="" src="/images/wallet.svg" alt="">$1,500.00<img
-                            class="menu__image" src="/images/arrow-down.svg"></a>
+            <ul class="menu__list menu__list--horizontal">
+                <li class="menu__item menu__item--border menu__item--wide">
+                    <a href="#" class="menu__link">
+                        <img class="menu__image menu__image--filter" src="/images/wallet.svg" alt="">$1,500.00<img class="menu__image menu__image--filter menu__image--right" src="/images/arrow-down.svg">
+                    </a>
                 </li>
-                <li class="menu__item menu_item--notification-dot">
-                    <a href="#" class="menu__image"><img class="svg" src="/images/notification.svg" alt=""></a>
+                <li class="menu__item menu__item--border menu_item--notification-dot">
+                    <a href="#" class="menu__link"><img class="menu__image menu__image--filter menu__image--center" src="/images/notification.svg" alt=""></a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__image"><img class="svg" src="/images/profile.svg" alt="">
+                <li class="menu__item menu__item--border menu__item--wide">
+                    <a href="#" class="menu__link"><img class="menu__image menu__image--filter" src="/images/profile.svg" alt="">
                         Leonardo DiCaprio</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__image"><img class="svg" src="/images/quit.svg" alt=""></a>
+                <li class="menu__item menu__item--border">
+                    <a href="#" class="menu__link"><img class="menu__image menu__image--filter menu__image--center" src="/images/quit.svg" alt=""></a>
                 </li>
             </ul>
         </nav>
-        <section class="section main__section">
+        <!-- <section class="section main__section">
             <div class="section__title-wrapper">
                 <h4 class="section__title">General Statistic</h4>
             </div>
@@ -80,7 +84,8 @@
                     <input type="date" class="section__datepicker">
                     <input type="date" class="section__datepicker">
                 </div>
-                <a href="#" class="button section__button"><img class="button-image" src="/images/refresh.svg" alt=""></a>
+                <a href="#" class="button section__button"><img class="button-image" src="/images/refresh.svg"
+                        alt=""></a>
             </div>
 
             <div class="section__statistic">
@@ -112,134 +117,134 @@
             </div>
         </section>
         <section class="section main__section">
-                <div class="section__title-wrapper">
-                    <h4 class="section__title">Links</h4>
+            <div class="section__title-wrapper">
+                <h4 class="section__title">Links</h4>
+            </div>
+            <div class="section__div-wrapper">
+                <a href="#" class="button section__button">+ add new</a>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Home page</h4>
                 </div>
-                <div class="section__div-wrapper">
-                    <a href="#" class="button section__button">+ add new</a>
+                <div>
+                    <a href="#">https://homepage.com</a>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Home page</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://homepage.com</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="/images/links.svg" alt=""></a>
-                        <a href="#"><img src="/images/trash.svg" alt=""></a>
-                    </div>
+                <div>
+                    <a href="#"><img src="/images/links.svg" alt=""></a>
+                    <a href="#"><img src="/images/trash.svg" alt=""></a>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Currently offer</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://currently.com</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="/images/links.svg" alt=""></a>
-                        <a href="#"><img src="/images/trash.svg" alt=""></a>
-                    </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Currently offer</h4>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Blurpix</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://blurpix.com</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="/images/links.svg" alt=""></a>
-                        <a href="#"><img src="/images/trash.svg" alt=""></a>
-                    </div>
+                <div>
+                    <a href="#">https://currently.com</a>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Your site</h4>
-                    </div>
-                    <div><a href="#">https://yoursite.com</a></div>
-                    <div>
-                        <a href="#"><img src="/images/links.svg" alt=""></a>
-                        <a href="#"><img src="/images/trash.svg" alt=""></a>
-                    </div>
+                <div>
+                    <a href="#"><img src="/images/links.svg" alt=""></a>
+                    <a href="#"><img src="/images/trash.svg" alt=""></a>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Google</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://google.com</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="/images/links.svg" alt=""></a>
-                        <a href="#"><img src="/images/trash.svg" alt=""></a>
-                    </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Blurpix</h4>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Facebook</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://facebook.com</a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="/images/links.svg" alt=""></a>
-                        <a href="#"><img src="/images/trash.svg" alt=""></a>
-                    </div>
+                <div>
+                    <a href="#">https://blurpix.com</a>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Dashboard</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://dashboard.com</a>
-                    </div>
-                    <div>
-                        <a href=""><img src="/images/links.svg" alt=""></a>
-                        <a href=""><img src="/images/trash.svg" alt=""></a>
-                    </div>
+                <div>
+                    <a href="#"><img src="/images/links.svg" alt=""></a>
+                    <a href="#"><img src="/images/trash.svg" alt=""></a>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Blurax</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://blurax.com</a>
-                    </div>
-                    <div>
-                        <a href=""><img src="/images/links.svg" alt=""></a>
-                        <a href=""><img src="/images/trash.svg" alt=""></a>
-                    </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Your site</h4>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Piece of Wine</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://pieceofwine.com</a>
-                    </div>
-                    <div>
-                        <a href=""><img src="/images/links.svg" alt=""></a>
-                        <a href=""><img src="/images/trash.svg" alt=""></a>
-                    </div>
+                <div><a href="#">https://yoursite.com</a></div>
+                <div>
+                    <a href="#"><img src="/images/links.svg" alt=""></a>
+                    <a href="#"><img src="/images/trash.svg" alt=""></a>
                 </div>
-                <div class="section__div-wrapper">
-                    <div class="subtitle-wrapper">
-                        <h4>Twitter</h4>
-                    </div>
-                    <div>
-                        <a href="#">https://twitter.com</a>
-                    </div>
-                    <div>
-                        <a href=""><img src="/images/links.svg" alt=""></a>
-                        <a href=""><img src="/images/trash.svg" alt=""></a>
-                    </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Google</h4>
                 </div>
-                <div class="section__div-wrapper">
-                    <a href="#" class="button section__button">+ add new</a>
+                <div>
+                    <a href="#">https://google.com</a>
                 </div>
-        </section>
+                <div>
+                    <a href="#"><img src="/images/links.svg" alt=""></a>
+                    <a href="#"><img src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Facebook</h4>
+                </div>
+                <div>
+                    <a href="#">https://facebook.com</a>
+                </div>
+                <div>
+                    <a href="#"><img src="/images/links.svg" alt=""></a>
+                    <a href="#"><img src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Dashboard</h4>
+                </div>
+                <div>
+                    <a href="#">https://dashboard.com</a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/links.svg" alt=""></a>
+                    <a href=""><img src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Blurax</h4>
+                </div>
+                <div>
+                    <a href="#">https://blurax.com</a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/links.svg" alt=""></a>
+                    <a href=""><img src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Piece of Wine</h4>
+                </div>
+                <div>
+                    <a href="#">https://pieceofwine.com</a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/links.svg" alt=""></a>
+                    <a href=""><img src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="section__div-wrapper">
+                <div class="subtitle-wrapper">
+                    <h4>Twitter</h4>
+                </div>
+                <div>
+                    <a href="#">https://twitter.com</a>
+                </div>
+                <div>
+                    <a href=""><img src="/images/links.svg" alt=""></a>
+                    <a href=""><img src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="section__div-wrapper">
+                <a href="#" class="button section__button">+ add new</a>
+            </div>
+        </section> -->
     </main>
     <script src="https://kit.fontawesome.com/29dd144af2.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
