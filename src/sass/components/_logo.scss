@@ -1,19 +1,22 @@
 .logo {
-    display: flex;
-    justify-content: space-around;
-    &__name {
-        font-family: $navigation-font;
-        color: $font-color-second;
-        padding-left: 10px;
-    }
-    &__hamburger {
-        height: 100%;
-        margin: auto auto;
-        text-align: center;
-        cursor: pointer;
-    }
-    &__icon {
-        width: 15px;
-        height: 15px;
-    }
+  display: flex;
+  justify-content: space-around;
+
+  &__name {
+    font-family: $navigation-font;
+    color: $font-color-second;
+    padding-left: 10px;
+  }
+
+  &__hamburger {
+    height: 100%;
+    margin: auto auto;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
 }

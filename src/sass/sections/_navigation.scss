@@ -30,12 +30,21 @@
     position: relative;
     height: 40px;
 
-    &--notification-dot {
+    &--green {
       &::after {
         background-color: $notification-online-color;
         @include notification-dot;
       }
     }
+    &--orange {
+      &::after {
+        background-color: $notification-color;
+        @include notification-dot;
+        top: 7px;
+        left: 20px;
+      }
+    }
+
     &--border {
       border-left: $top-navigation-border;
     }
