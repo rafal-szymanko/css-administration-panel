@@ -5,6 +5,7 @@
   &--vertical {
     background-color: $side-navigation-background;
     transition: 0.2s;
+
   }
 
   &--horizontal {
@@ -30,12 +31,30 @@
     position: relative;
     height: 40px;
 
+    &--hover {
+      box-sizing: border-box;
+
+      &:hover {
+        background: $button-hover;
+        border-left: 3px solid $button-color;
+
+        .menu__link--white {
+          color: white;
+        }
+
+        .menu__image--white {
+          filter: invert(96%) sepia(32%) saturate(241%) hue-rotate(347deg) brightness(115%) contrast(91%);
+        }
+      }
+    }
+
     &--green {
       &::after {
         background-color: $notification-online-color;
         @include notification-dot;
       }
     }
+
     &--orange {
       &::after {
         background-color: $notification-color;

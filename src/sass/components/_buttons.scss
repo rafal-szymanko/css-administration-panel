@@ -95,19 +95,78 @@
 
 
 .button {
-  width: 72px;
+  width: 100px;
   height: 36px;
   display: block;
   background-color: $button-color;
   border-radius: 5px;
   margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+  line-height: 36px;
+  text-align: center;
+  color: $font-color-third;
+
+
   &--small {
     width: 36px;
-    position: relative;
   }
+
   &__image {
     @include svg-image;
     @include center-object;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
+
+  &--grey {
+    background-color: $button-color-second;
+    text-align: end;
+    color: $font-color-main;
+    width: 90px;
+    padding-right: 10px;
+  }
+
+  &--blue {
+    &:after {
+      @include main-btn-dot;
+      background-color: $dot-color-first;
+    }
+  }
+
+  &--green {
+    &:after {
+      @include main-btn-dot;
+      background-color: $dot-color-second;
+    }
+  }
+
+  &--orange {
+    width: 60px;
+
+    &:after {
+      @include main-btn-dot;
+      background-color: $dot-color-third;
+    }
+  }
 }
+
+// .signups {
+//   &:after {
+//     @include main-btn-dot;
+//     background-color: $dot-color-first;
+//   }
+// }
+
+// .ftd {
+//   &:after {
+//     @include main-btn-dot;
+//     background-color: $dot-color-second;
+//   }
+// }
+
+// .earned {
+//   &:after {
+//     @include main-btn-dot;
+//     background-color: $dot-color-third;
+//   }
+// }
