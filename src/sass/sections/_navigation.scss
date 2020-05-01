@@ -13,7 +13,7 @@
     border-bottom: $top-navigation-border;
   }
 
-      
+
   &--show {
     width: 50px;
   }
@@ -35,6 +35,10 @@
     list-style: none;
     position: relative;
     height: 40px;
+
+    &--display {
+      display: none;
+    }
 
     &--hover {
       box-sizing: border-box;
@@ -117,24 +121,54 @@
 
     &--active {
       margin: 0 auto;
-      
+
     }
 
   }
+
   &__text {
     &--show {
       display: none;
     }
   }
+
   &__title {
     &--show {
       display: none;
     }
   }
 
-&__messenger {
-  &--show {
-    border-top: 1px solid $font-color-main;
+  &__messenger {
+    &--show {
+      border-top: 1px solid $font-color-main;
+    }
   }
 }
+
+@media (max-width: 1024px) {
+  
+  .menu {
+    &--horizontal {
+      display: none;
+    }
+    &__item {
+      list-style: none;
+      position: relative;
+      height: 40px;
+  
+      &--display {
+        display: block;
+      }
+    }
+    &__image {
+      &--right {
+        display: none;
+      }
+    }
+  }
+
+
+  
+
 }
+
