@@ -6,6 +6,10 @@
     font-family: $navigation-font;
     color: $font-color-second;
     padding-left: 10px;
+    margin: 0;
+    &--show {
+      display: none;
+    }
   }
 
   &__hamburger {
@@ -13,6 +17,7 @@
     margin: auto auto;
     text-align: center;
     cursor: pointer;
+    line-height: 40px;
   }
 
   &__icon {

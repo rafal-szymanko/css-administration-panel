@@ -12,7 +12,7 @@
     background-color: $top-navigation-background;
     border-bottom: $top-navigation-border;
   }
-  
+
       
   &--show {
     width: 50px;
@@ -84,6 +84,7 @@
     color: $font-color-main;
     padding-left: 40px;
     display: block;
+    height: 40px;
   }
 
   &__image {
@@ -93,6 +94,7 @@
     right: 0;
     transform: translate(0, -50%);
     z-index: 1;
+    line-height: 40px;
 
     &--big {
       width: 30px;
@@ -112,5 +114,27 @@
     &--filter {
       @include svg-image;
     }
+
+    &--active {
+      margin: 0 auto;
+      
+    }
+
   }
+  &__text {
+    &--show {
+      display: none;
+    }
+  }
+  &__title {
+    &--show {
+      display: none;
+    }
+  }
+
+&__messenger {
+  &--show {
+    border-top: 1px solid $font-color-main;
+  }
+}
 }
