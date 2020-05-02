@@ -53,18 +53,6 @@
     margin: auto 0;
   }
 
-  &__chart {
-    width: 80%;
-    background-image: url('/images/chart.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 40vh;
-  }
-
-  &__bars {
-    max-width: 10%;
-  }
-
   &__subtitle {
     margin: 0;
     padding-left: 10px;
