@@ -13,10 +13,16 @@
     }
   }
 
+  // &--mobile {
+  //   justify-content: flex-start;
+  //   background-color: $side-navigation-background;
+  //   display: none;
+  // }
+
   &__hamburger {
     height: 100%;
     margin: auto auto;
-    text-align: center;
+    text-align: end;
     cursor: pointer;
     line-height: 40px;
   }
@@ -24,5 +30,13 @@
   &__icon {
     width: 15px;
     height: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    &--mobile {
+      display: flex;
+    }
   }
 }

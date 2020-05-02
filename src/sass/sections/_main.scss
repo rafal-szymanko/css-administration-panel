@@ -6,3 +6,10 @@
     width: calc(100% - 50px);
   }
 }
+
+@media (max-width: 1024px) {
+  .main {
+    width: 100%;
+    left: 0;
+  }
+}
