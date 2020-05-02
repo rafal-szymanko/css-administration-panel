@@ -25,6 +25,12 @@
   &__list {
     padding: 0;
     margin: 0;
+    &--mobile {
+      display: none;
+    }
+    &--show {
+      display: block;
+    }
 
     &--horizontal {
       display: flex;
@@ -158,6 +164,7 @@
     &--vertical {
       display: none;
     }
+
     &--mobile {
       background-color: $side-navigation-background;
       display: block;
@@ -186,6 +193,7 @@
       }
     }
   }
+
   &__text {
     display: block;
   }

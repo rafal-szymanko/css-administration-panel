@@ -37,6 +37,12 @@
   .logo {
     &--mobile {
       display: flex;
+      justify-content: flex-start;
+    }
+    &__hamburger {
+      &--mobile {
+        margin: 0 10px;
+      }
     }
   }
 }

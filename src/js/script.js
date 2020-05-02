@@ -1,7 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 const sideBarHandler = document.querySelector('.fa-bars');
+const mobileBarHandler = document.querySelector('.logo__icon--mobile');
 const navigation = document.querySelector('.menu');
+const navigationMobile = document.querySelector('.menu__list--mobile');
 const linkNames = document.querySelectorAll('.menu__text');
 const mainSide = document.querySelector('main');
 const menuimages = document.querySelectorAll('.menu__image--white');
@@ -26,6 +28,10 @@ sideBarHandler.addEventListener('click', function(){
     menuimage.classList.toggle('menu__image--active');
   }
 
+});
+
+mobileBarHandler.addEventListener('click', function() {
+  navigationMobile.classList.toggle('menu__list--show');
 });
 
 
