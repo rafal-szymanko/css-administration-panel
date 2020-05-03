@@ -1,0 +1,12 @@
+.calendar {
+  &__wrapper {
+    border: $top-navigation-border;
+    border-radius: 5px;
+  }
+
+  &__datepicker {
+    border: none;
+    line-height: 34px;
+    text-align: center;
+  }
+}

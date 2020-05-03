@@ -52,7 +52,7 @@ if (day < 10) {
 
 let today = year + '-' + month + '-' + day;    
 
-const datepickers = document.querySelectorAll('.section__datepicker');
+const datepickers = document.querySelectorAll('.calendar__datepicker');
 
 for (let datepicker of datepickers) {
   datepicker.value = today;
@@ -104,4 +104,67 @@ const myBarChart = new Chart(ctx, {
       }
     }
   }
+});
+
+const tableDetail = document.querySelector('.table__detail');
+
+const tableDetailData = [
+  {id:1, name:'aff/sam_test', date:'17/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'34,425.00', payout:'234.00', tournover:'421,342.00', deal:'cpl(200)'},
+  {id:2, name:'aff/leo_test', date:'15/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'29,436.00', payout:'941.00', tournover:'784,435.00', deal:'cpl(200)'},
+  {id:3, name:'aff/sam_test', date:'17/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'34,425.00', payout:'234.00', tournover:'421,342.00', deal:'cpl(200)'},
+  {id:4, name:'aff/leo_test', date:'15/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'29,436.00', payout:'941.00', tournover:'784,435.00', deal:'cpl(200)'},
+  {id:5, name:'aff/sam_test', date:'17/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'34,425.00', payout:'234.00', tournover:'421,342.00', deal:'cpl(200)'},
+  {id:6, name:'aff/leo_test', date:'15/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'29,436.00', payout:'941.00', tournover:'784,435.00', deal:'cpl(200)'},
+  {id:7, name:'aff/sam_test', date:'17/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'34,425.00', payout:'234.00', tournover:'421,342.00', deal:'cpl(200)'},
+  {id:8, name:'aff/leo_test', date:'15/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'29,436.00', payout:'941.00', tournover:'784,435.00', deal:'cpl(200)'},
+  {id:9, name:'aff/sam_test', date:'17/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'34,425.00', payout:'234.00', tournover:'421,342.00', deal:'cpl(200)'},
+  {id:10, name:'aff/leo_test', date:'15/08/02 (12:58)', visits:'232', unique:'112', signups:'12', ftd:'6', depositors:'3', deposits:'29,436.00', payout:'941.00', tournover:'784,435.00', deal:'cpl(200)'},
+];
+
+const tableDetailDOM = new Tabulator(tableDetail, {
+  // height:400\, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+  data:tableDetailData, 
+  responsiveLayout:'collapse',
+  layout:'fitColumns',
+  columns:[ //Define Table Columns
+    {title:'Tracker Name', field:'name', hozAlign:'left', height: 50},
+    {title:'Initiated data', field:'date', hozAlign:'left'},
+    {title:'Visits', field:'visits', hozAlign:'left'},
+    {title:'Unique', field:'unique', hozAlign:'left'},
+    {title:'Signups', field:'signups', hozAlign:'left'},
+    {title:'FTD', field:'ftd', hozAlign:'left'},
+    {title:'Depositors', field:'depositors', hozAlign:'left'},
+    {title:'Deposits ($)', field:'deposits', hozAlign:'left'},
+    {title:'Payout', field:'payout', hozAlign:'left'},
+    {title:'Tournover', field:'tournover', hozAlign:'left'},
+    {title:'Deal', field:'deal', hozAlign:'left', height: '100'},
+  ],
+});
+
+const tablePayout = document.querySelector('.table__payout');
+
+const tablePayoutData = [
+  {id:1, date:'17/08/02 (12:58)', amount:'34,425.00', deal:'cpl(200)', account:'bank'},
+  {id:2, date:'15/08/02 (12:58)', amount:'29,436.00', deal:'cpl(200)', account:'bank'},
+  {id:3, date:'17/08/02 (12:58)', amount:'34,425.00', deal:'cpl(200)', account:'bank'},
+  {id:4, date:'15/08/02 (12:58)', amount:'29,436.00', deal:'cpl(200)', account:'bank'},
+  {id:5, date:'17/08/02 (12:58)', amount:'34,425.00', deal:'cpl(200)', account:'bank'},
+  {id:6, date:'15/08/02 (12:58)', amount:'29,436.00', deal:'cpl(200)', account:'bank'},
+  {id:7, date:'17/08/02 (12:58)', amount:'34,425.00', deal:'cpl(200)', account:'bank'},
+  {id:8, date:'15/08/02 (12:58)', amount:'29,436.00', deal:'cpl(200)', account:'bank'},
+  {id:9, date:'17/08/02 (12:58)', amount:'34,425.00', deal:'cpl(200)', account:'bank'},
+  {id:10, date:'15/08/02 (12:58)', amount:'29,436.00', deal:'cpl(200)', account:'bank'},
+];
+
+const tablePayoutDOM = new Tabulator(tablePayout, {
+
+  data:tablePayoutData, 
+  responsiveLayout:'collapse',
+  layout:'fitColumns',
+  columns:[ //Define Table Columns
+    {title:'Date', field:'date', hozAlign:'left'},
+    {title:'Amount ($)', field:'amount', hozAlign:'left'},
+    {title:'Deal', field:'deal', hozAlign:'left'},
+    {title:'Account', field:'account', hozAlign:'left'},
+  ],
 });

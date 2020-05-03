@@ -1,0 +1,32 @@
+.form {
+  &__wrapper {
+    border-bottom: $top-navigation-border;
+  }
+
+  &__info {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &--margin {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__input {
+    border: $top-navigation-border;
+    border-radius: 5px;
+  }
+
+  &__label {
+    width: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    &__info {
+      flex-direction: column;
+    }
+  }
+}

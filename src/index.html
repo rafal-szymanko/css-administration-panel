@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tabulator-tables@4.6.2/dist/css/tabulator.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,55 +21,42 @@
         </div>
         <ul class="menu__list">
             <li class="menu__item menu__item--hover">
-                <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/general.svg" /><span class="menu__text">General</span></a>
+                <a href="#" class="menu__link menu__link--white"><img
+                        class="menu__image menu__image--filter menu__image--white" src="/images/general.svg" /><span
+                        class="menu__text">General</span></a>
             </li>
             <li class="menu__item menu__item--hover">
-                <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/details.svg" /><span class="menu__text ">Details</span></a>
+                <a href="#" class="menu__link menu__link--white"><img
+                        class="menu__image menu__image--filter menu__image--white" src="/images/details.svg" /><span
+                        class="menu__text ">Details</span></a>
             </li>
             <li class="menu__item menu__item--hover">
-                <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/links.svg" /><span class="menu__text ">Links</span></a>
+                <a href="#" class="menu__link menu__link--white"><img
+                        class="menu__image menu__image--filter menu__image--white" src="/images/links.svg" /><span
+                        class="menu__text ">Links</span></a>
             </li>
             <li class="menu__item menu__item--hover">
-                <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/banners.svg" /><span class="menu__text ">Banners</span></a>
+                <a href="#" class="menu__link menu__link--white"><img
+                        class="menu__image menu__image--filter menu__image--white" src="/images/banners.svg" /><span
+                        class="menu__text ">Banners</span></a>
             </li>
             <li class="menu__item menu__item--hover">
-                <a href="#" class="menu__link menu__link--white"> <img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/personaldata.svg" />
+                <a href="#" class="menu__link menu__link--white"> <img
+                        class="menu__image menu__image--filter menu__image--white" src="/images/personaldata.svg" />
                     <span class="menu__text ">Personal Data</span></a>
             </li>
             <li class="menu__item menu__item--hover">
-                <a href="#" class="menu__link menu__link--white"> <img class="menu__image menu__image--filter menu__image--white" src="/images/payout.svg" />
+                <a href="#" class="menu__link menu__link--white"> <img
+                        class="menu__image menu__image--filter menu__image--white" src="/images/payout.svg" />
                     <span class="menu__text ">Payout</span></a>
-            </li>
-            <li class="menu__item menu__item--hover menu__item--display">
-                <a href="#" class="menu__link menu__link--white">
-                    <img class="menu__image menu__image--filter menu__image--white" src="/images/wallet.svg" alt=""><span class="menu__text ">Balance</span><img
-                        class="menu__image menu__image--filter menu__image--white menu__image--right" src="/images/arrow-down.svg">
-                </a>
-            </li>
-            <li class="menu__item menu__item--hover menu__item--orange menu__item--display">
-                <a href="#" class="menu__link"><img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/notification.svg" alt=""><span class="menu__text ">Notification</span></a>
-            </li>
-            <li class="menu__item menu__item--hover menu__item--display">
-                <a href="#" class="menu__link"><img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/profile.svg" alt=""><span class="menu__text ">Profile</span></a>
-            </li>
-            <li class="menu__item menu__item--hover menu__item--display">
-                <a href="#" class="menu__link"><img class="menu__image menu__image--filter menu__image--white"
-                        src="/images/quit.svg" alt=""><span class="menu__text ">Logout</span></a>
             </li>
         </ul>
         <div class="menu__messenger">
             <h4 class="menu__title">Your Manager</h4>
             <ul class="menu__list">
                 <li class="menu__item menu__item--green menu__item--hover">
-                    <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--big" src="/images/manager.png"
-                            alt=""><span class="menu__text ">Mikhael E.</span></a>
+                    <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--big"
+                            src="/images/manager.png" alt=""><span class="menu__text ">Mikhael E.</span></a>
                 </li>
             </ul>
         </div>
@@ -83,34 +71,41 @@
             </div>
             <ul class="menu__list menu__list--mobile menu--list">
                 <li class="menu__item menu__item--hover">
-                    <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
+                    <a href="#" class="menu__link menu__link--white"><img
+                            class="menu__image menu__image--filter menu__image--white"
                             src="/images/general.svg" /><span>General</span></a>
                 </li>
                 <li class="menu__item menu__item--hover">
-                    <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
+                    <a href="#" class="menu__link menu__link--white"><img
+                            class="menu__image menu__image--filter menu__image--white"
                             src="/images/details.svg" /><span>Details</span></a>
                 </li>
                 <li class="menu__item menu__item--hover">
-                    <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
+                    <a href="#" class="menu__link menu__link--white"><img
+                            class="menu__image menu__image--filter menu__image--white"
                             src="/images/links.svg" /><span>Links</span></a>
                 </li>
                 <li class="menu__item menu__item--hover">
-                    <a href="#" class="menu__link menu__link--white"><img class="menu__image menu__image--filter menu__image--white"
+                    <a href="#" class="menu__link menu__link--white"><img
+                            class="menu__image menu__image--filter menu__image--white"
                             src="/images/banners.svg" /><span>Banners</span></a>
                 </li>
                 <li class="menu__item menu__item--hover">
-                    <a href="#" class="menu__link menu__link--white"> <img class="menu__image menu__image--filter menu__image--white"
-                            src="/images/personaldata.svg" />
+                    <a href="#" class="menu__link menu__link--white"> <img
+                            class="menu__image menu__image--filter menu__image--white" src="/images/personaldata.svg" />
                         <span>Personal Data</span></a>
                 </li>
                 <li class="menu__item menu__item--hover">
-                    <a href="#" class="menu__link menu__link--white"> <img class="menu__image menu__image--filter menu__image--white" src="/images/payout.svg" />
+                    <a href="#" class="menu__link menu__link--white"> <img
+                            class="menu__image menu__image--filter menu__image--white" src="/images/payout.svg" />
                         <span>Payout</span></a>
                 </li>
                 <li class="menu__item menu__item--hover menu__item--display">
                     <a href="#" class="menu__link menu__link--white">
-                        <img class="menu__image menu__image--filter menu__image--white" src="/images/wallet.svg" alt="">Balance</span><img
-                            class="menu__image menu__image--filter menu__image--white menu__image--right" src="/images/arrow-down.svg">
+                        <img class="menu__image menu__image--filter menu__image--white" src="/images/wallet.svg"
+                            alt="">Balance</span><img
+                            class="menu__image menu__image--filter menu__image--white menu__image--right"
+                            src="/images/arrow-down.svg">
                     </a>
                 </li>
                 <li class="menu__item menu__item--hover menu__item--orange menu__item--display">
@@ -154,10 +149,10 @@
             <div class="section__title-wrapper">
                 <h4 class="section__title">General Statistic</h4>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--border">
-                <div class="section__calendar-wrapper">
-                    <input type="date" class="section__datepicker">
-                    <input type="date" class="section__datepicker">
+            <div class="calendar section__calendar">
+                <div class="calendar__wrapper">
+                    <input type="date" class="calendar__datepicker">
+                    <input type="date" class="calendar__datepicker">
                 </div>
                 <a href="#" class="button section__button button--small"><img class="button__image"
                         src="/images/refresh.svg" alt=""></a>
@@ -188,15 +183,16 @@
                     <canvas class="section__chart" width="200" height="200"></canvas>
                 </div>
             </div>
-            </section>
-            <section class="section main__section">
+        </section>
+        <section class="section main__section">
             <div class="section__title-wrapper">
                 <h4 class="section__title">Links</h4>
             </div>
             <div class="section__div-wrapper">
                 <a href="#" class="button section__button">+ add new</a>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Home page</h4>
                 </div>
@@ -208,7 +204,8 @@
                     <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Currently offer</h4>
                 </div>
@@ -220,7 +217,8 @@
                     <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Blurpix</h4>
                 </div>
@@ -232,17 +230,19 @@
                     <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Your site</h4>
                 </div>
                 <div class="section__link"><a href="#">https://yoursite.com</a></div>
                 <div>
-                    <a href="#"><img class="section__image"src="/images/links.svg" alt=""></a>
+                    <a href="#"><img class="section__image" src="/images/links.svg" alt=""></a>
                     <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Google</h4>
                 </div>
@@ -254,7 +254,8 @@
                     <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Facebook</h4>
                 </div>
@@ -266,7 +267,8 @@
                     <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Dashboard</h4>
                 </div>
@@ -278,7 +280,8 @@
                     <a href=""><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Blurax</h4>
                 </div>
@@ -290,7 +293,8 @@
                     <a href=""><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Piece of Wine</h4>
                 </div>
@@ -302,7 +306,8 @@
                     <a href=""><img class="section__image" src="/images/trash.svg" alt=""></a>
                 </div>
             </div>
-            <div class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
                 <div class="section__subtitle-wrapper">
                     <h4 class="section__subtitle">Twitter</h4>
                 </div>
@@ -318,9 +323,186 @@
                 <a href="#" class="button section__button">+ add new</a>
             </div>
         </section>
+        <section class="section main__section">
+            <div class="section__title-wrapper">
+                <h4 class="section__title">Banners</h4>
+            </div>
+            <div class="section__div-wrapper">
+                <a href="#" class="button section__button">+ add new</a>
+            </div>
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+                <div class="section__subtitle-wrapper">
+                    <h4 class="section__subtitle">Banner main</h4>
+                </div>
+                <div class="section__link">
+                    <a href="#">https://www.website.com/bannermain.gif</a>
+                </div>
+                <div>
+                    <a href="#"><img class="section__image" src="/images/links.svg" alt=""></a>
+                    <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+                <div class="section__subtitle-wrapper">
+                    <h4 class="section__subtitle">Sign up</h4>
+                </div>
+                <div class="section__link">
+                    <a href="#">https://www.website.com/signup.gif</a>
+                </div>
+                <div>
+                    <a href="#"><img class="section__image" src="/images/links.svg" alt=""></a>
+                    <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+                <div class="section__subtitle-wrapper">
+                    <h4 class="section__subtitle">Banner left side</h4>
+                </div>
+                <div class="section__link">
+                    <a href="#">https://www.website.com/leftside.gif</a>
+                </div>
+                <div>
+                    <a href="#"><img class="section__image" src="/images/links.svg" alt=""></a>
+                    <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+                <div class="section__subtitle-wrapper">
+                    <h4 class="section__subtitle">Vertical banner</h4>
+                </div>
+                <div class="section__link"><a href="#">https://www.website.com/vert.gif</a></div>
+                <div>
+                    <a href="#"><img class="section__image" src="/images/links.svg" alt=""></a>
+                    <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+                <div class="section__subtitle-wrapper">
+                    <h4 class="section__subtitle">Front banner</h4>
+                </div>
+                <div class="section__link">
+                    <a href="#">https://www.website.com/front.gif</a>
+                </div>
+                <div>
+                    <a href="#"><img class="section__image" src="/images/links.svg" alt=""></a>
+                    <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="section__div-wrapper section__div-wrapper--start section__div-wrapper--border section__div-wrapper--hover">
+                <div class="section__subtitle-wrapper">
+                    <h4 class="section__subtitle">Horizontal banner</h4>
+                </div>
+                <div class="section__link">
+                    <a href="#">https://www.website.com/horizontal.gif</a>
+                </div>
+                <div>
+                    <a href="#"><img class="section__image" src="/images/links.svg" alt=""></a>
+                    <a href="#"><img class="section__image" src="/images/trash.svg" alt=""></a>
+                </div>
+            </div>
+            </div>
+            <div class="section__div-wrapper">
+                <a href="#" class="button section__button">+ add new</a>
+            </div>
+        </section>
+        <section class="section main__section">
+            <div class="section__title-wrapper">
+                <h4 class="section__title">Personal data</h4>
+            </div>
+            <form class="form section__form">
+                <div class="form__wrapper">
+                    <div class ="form__info">
+                        <label for="name" class="form__label">Name</label>
+                        <input type="text" class ="form__input">
+                    </div>
+                    <div class ="form__info">
+                        <label for="surname" class="form__label">Surname</label>
+                        <input type="text" class ="form__input">
+                    </div>
+                    <div class ="form__info">
+                        <label for="mail" class="form__label">E-mail</label>
+                        <input type="email" class ="form__input">
+                    </div>
+                    <div class ="form__info">
+                        <label for="name" class="form__label">Phone number</label>
+                        <input type="tel" class ="form__input">
+                    </div>
+                </div>
+                <div class="form__wrapper">
+                    <div class ="form__info">
+                        <label for="messenger" class="form__label">Skype</label>
+                        <input type="text" class ="form__input">                
+                    </div>
+                    <div class ="form__info">
+                        <label for="messenger" class="form__label">ICQ</label>
+                        <input type="text" class ="form__input">
+                    </div>
+                    <div class ="form__info">
+                        <label for="messenger" class="form__label">MSN</label>
+                        <input type="text" class ="form__input">
+                    </div>
+                </div>
+                <div class="form__wrapper">
+                    <div class ="form__info form__info--margin">
+                        <label for="wallet" class="form__label">Wallet</label>
+                        <input type="text" class ="form__input">
+                    </div>
+                    <div class ="form__info">
+                        <label for="surname" class="form__label">Password</label>
+                        <input type="password" class ="form__input">
+                    </div>
+                    <div class ="form__info">
+                        <label for="surname" class="form__label">Repeat</label>
+                        <input type="password" class ="form__input">
+                    </div>
+                </div>
+            </form>
+            <div class="form__wrapper">
+                <a href="#" class="button">Save</a>
+            </div>
+        </section>
+        <section class="section main__section">
+            <div class="section__title-wrapper">
+                <h4 class="section__title">Detail Statistic</h4>
+            </div>
+            <div class="calendar section__calendar">
+                <div class="calendar__wrapper">
+                    <input type="date" class="calendar__datepicker">
+                    <input type="date" class="calendar__datepicker">
+                </div>
+                <a href="#" class="button section__button button--small"><img class="button__image"
+                        src="/images/refresh.svg" alt=""></a>
+            </div>
+            <div class="table">
+                <div class="table__detail"></div>
+            </div>
+        </section>
+        <section class="section main__section">
+            <div class="section__title-wrapper">
+                <h4 class="section__title">Payout History</h4>
+            </div>
+            <div class="calendar section__calendar">
+                <div class="calendar__wrapper">
+                    <input type="date" class="calendar__datepicker">
+                    <input type="date" class="calendar__datepicker">
+                </div>
+                <a href="#" class="button section__button button--small"><img class="button__image"
+                        src="/images/refresh.svg" alt=""></a>
+            </div>
+            <div class="table">
+                <div class="table__payout"></div>
+            </div>
+        </section>
     </main>
     <script src="https://kit.fontawesome.com/29dd144af2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.6.2/dist/js/tabulator.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
