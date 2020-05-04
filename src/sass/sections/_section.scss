@@ -5,6 +5,11 @@
   width: 95%;
   margin: 2% auto;
   box-shadow: $section-border;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 
   &__title-wrapper {
     border-bottom: $top-navigation-border;

@@ -122,12 +122,11 @@ const tableDetailData = [
 ];
 
 const tableDetailDOM = new Tabulator(tableDetail, {
-  // height:400\, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
   data:tableDetailData, 
   responsiveLayout:'collapse',
   layout:'fitColumns',
-  columns:[ //Define Table Columns
-    {title:'Tracker Name', field:'name', hozAlign:'left', height: 50},
+  columns:[ 
+    {title:'Tracker Name', field:'name', hozAlign:'left'},
     {title:'Initiated data', field:'date', hozAlign:'left'},
     {title:'Visits', field:'visits', hozAlign:'left'},
     {title:'Unique', field:'unique', hozAlign:'left'},
@@ -137,7 +136,7 @@ const tableDetailDOM = new Tabulator(tableDetail, {
     {title:'Deposits ($)', field:'deposits', hozAlign:'left'},
     {title:'Payout', field:'payout', hozAlign:'left'},
     {title:'Tournover', field:'tournover', hozAlign:'left'},
-    {title:'Deal', field:'deal', hozAlign:'left', height: '100'},
+    {title:'Deal', field:'deal', hozAlign:'left'},
   ],
 });
 
@@ -161,10 +160,42 @@ const tablePayoutDOM = new Tabulator(tablePayout, {
   data:tablePayoutData, 
   responsiveLayout:'collapse',
   layout:'fitColumns',
-  columns:[ //Define Table Columns
+  columns:[
     {title:'Date', field:'date', hozAlign:'left'},
     {title:'Amount ($)', field:'amount', hozAlign:'left'},
     {title:'Deal', field:'deal', hozAlign:'left'},
     {title:'Account', field:'account', hozAlign:'left'},
   ],
 });
+
+// Display section 
+
+function linkClickHandler(event) {
+  event.preventDefault();
+  const clickedElement = this;
+
+  const activeLinks = document.querySelectorAll('.menu__link--active');
+
+  for (let activeLink of activeLinks) {
+    activeLink.classList.remove('menu__link--active');
+  }
+
+  clickedElement.classList.add('menu__link--active');
+  const sectionSelector = clickedElement.getAttribute('href').slice(1);
+
+  const activeSections = document.querySelectorAll('.section--active');
+
+  for (let activeSection of activeSections) {
+    activeSection.classList.remove('section--active');
+  }
+  console.log(sectionSelector);
+  const targetSection = document.querySelector(`.section--${sectionSelector}`);
+  console.log(targetSection);
+  targetSection.classList.add('section--active');
+}
+
+const menuLinks = document.querySelectorAll('.menu__link');
+
+for (let menuLink of menuLinks) {
+  menuLink.addEventListener('click', linkClickHandler);
+}
