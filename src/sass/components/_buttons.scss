@@ -150,23 +150,7 @@
   }
 }
 
-// .signups {
-//   &:after {
-//     @include main-btn-dot;
-//     background-color: $dot-color-first;
-//   }
-// }
+@media (max-width: 360px) {
 
-// .ftd {
-//   &:after {
-//     @include main-btn-dot;
-//     background-color: $dot-color-second;
-//   }
-// }
 
-// .earned {
-//   &:after {
-//     @include main-btn-dot;
-//     background-color: $dot-color-third;
-//   }
-// }
+}

@@ -9,4 +9,31 @@
     line-height: 34px;
     text-align: center;
   }
+  &__image {
+    @include svg-image;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .calendar {
+    position: relative;
+
+    &__wrapper {
+      width: 55%;
+      position: relative;
+    }
+    &__image {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &__button {
+      position: absolute;
+      top: 50%;
+      right: 6%;
+      transform: translateY(-50%);
+    }
+  }
+
 }

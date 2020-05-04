@@ -178,9 +178,11 @@ function linkClickHandler(event) {
 
   for (let activeLink of activeLinks) {
     activeLink.classList.remove('menu__link--active');
+    navigationMobile.classList.remove('menu__list--show');
   }
 
   clickedElement.classList.add('menu__link--active');
+
   const sectionSelector = clickedElement.getAttribute('href').slice(1);
 
   const activeSections = document.querySelectorAll('.section--active');
@@ -188,9 +190,8 @@ function linkClickHandler(event) {
   for (let activeSection of activeSections) {
     activeSection.classList.remove('section--active');
   }
-  console.log(sectionSelector);
+
   const targetSection = document.querySelector(`.section--${sectionSelector}`);
-  console.log(targetSection);
   targetSection.classList.add('section--active');
 }
 
@@ -199,3 +200,4 @@ const menuLinks = document.querySelectorAll('.menu__link');
 for (let menuLink of menuLinks) {
   menuLink.addEventListener('click', linkClickHandler);
 }
+

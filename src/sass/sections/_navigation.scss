@@ -28,6 +28,11 @@
 
     &--mobile {
       display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: $side-navigation-background;
+      opacity: 0.9;
+      width: 100%;
     }
 
     &--show {
