@@ -11,6 +11,8 @@
     display: block;
   }
 
+  //Title
+
   &__title-wrapper {
     border-bottom: $top-navigation-border;
   }
@@ -40,15 +42,7 @@
     }
   }
 
-  &__calendar-wrapper {
-    padding: 5px 10px 5px 5px;
-    border-radius: 5px;
-    border: $top-navigation-border;
-  }
-
-  &__datepicker {
-    border: none;
-  }
+  //Statistic
 
   &__statistic-wrapper {
     border-bottom: $top-navigation-border;
@@ -83,4 +77,65 @@
     }
   }
 
+}
+
+
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
+
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .section {
+    &__subtitle-wrapper {
+      flex-basis: 30%;
+    }
+
+    &__link {
+      flex-basis: 60%;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__hyperlink {
+      font-size: 14px;
+    }
+
+    &__image {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .section {
+    &__div-wrapper {
+      padding: 15px 0;
+    }
+
+    &__subtitle-wrapper {
+      flex-basis: 25%;
+    }
+
+    &__subtitle {
+      font-size: 10px;
+      line-height: 18px;
+    }
+
+    &__hyperlink {
+      font-size: 10px;
+    }
+
+    &__image {
+      width: 10px;
+      height: 10px;
+      padding: 0 0 0 5px;
+    }
+  }
 }

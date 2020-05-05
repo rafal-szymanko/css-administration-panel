@@ -1,98 +1,3 @@
-// .btn {
-//   display: block;
-//   text-decoration: none;
-//   color: $font-color-main;
-//   height: 40px;
-//   position: relative;
-// }
-
-
-// .side {
-//   li {
-//     &:hover {
-//       .btn {
-//         background: $button-hover;
-//         color: $font-color-second;
-//       }
-
-//       .btn-side-menu {
-//         border-left: 4px solid $button-color;
-//       }
-
-//       .svg {
-//         filter: invert(88%) sepia(12%) saturate(0%) hue-rotate(33deg) brightness(103%) contrast(92%);
-//       }
-//     }
-//   }
-// }
-
-// // Main
-
-
-// .calendar,
-// .links-wrapper {
-//   .orange {
-//     border-radius: 5px;
-//     background-color: $button-color;
-//     height: 40px;
-//   }
-// }
-
-// .calendar {
-//   .orange {
-//     margin-left: 20px;
-//     width: 40px;
-//     position: relative;
-//   }
-
-//   .main-btn {
-//     @include center-object;
-//     filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(41deg) brightness(103%) contrast(105%);
-//     height: 20px;
-//     width: 20px;
-//   }
-// }
-
-// .links-wrapper .orange {
-//   color: white;
-//   line-height: 40px;
-//   padding: 0 20px;
-//   margin: auto auto;
-// }
-
-
-// // Earnings charts BTN
-
-// .statistic-btn {
-//   border-radius: 5px;
-//   line-height: 40px;
-//   background-color: $button-color-second;
-//   margin: 40px 20px;
-//   padding: 0px 15px 0px 30px;
-
-// }
-
-// .signups {
-//   &:after {
-//     @include main-btn-dot;
-//     background-color: $dot-color-first;
-//   }
-// }
-
-// .ftd {
-//   &:after {
-//     @include main-btn-dot;
-//     background-color: $dot-color-second;
-//   }
-// }
-
-// .earned {
-//   &:after {
-//     @include main-btn-dot;
-//     background-color: $dot-color-third;
-//   }
-// }
-
 
 .button {
   width: 100px;
@@ -150,7 +55,16 @@
   }
 }
 
-@media (max-width: 360px) {
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
+
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
+
+// // Small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { ... }
+
+// Extra small devices (portrait phones, less than 576px)
 
 
-}
+

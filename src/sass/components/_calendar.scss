@@ -9,13 +9,14 @@
     line-height: 34px;
     text-align: center;
   }
+
   &__image {
     @include svg-image;
     padding-right: 10px;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 575.98px) {
   .calendar {
     position: relative;
 
@@ -23,11 +24,14 @@
       width: 55%;
       position: relative;
     }
+
     &__image {
       position: absolute;
       top: 50%;
+      right: 5%;
       transform: translateY(-50%);
     }
+
     &__button {
       position: absolute;
       top: 50%;
