@@ -10,6 +10,7 @@ const menuimages = document.querySelectorAll('.menu__image--white');
 const messengerName = document.querySelector('.menu__title');
 const logoName = document.querySelector('.logo__name');
 const messenger = document.querySelector('.menu__messenger');
+const modal = document.querySelector('.menu__link--modal');
 
 sideBarHandler.addEventListener('click', function(){
   navigation.classList.toggle('menu--show');
@@ -192,7 +193,13 @@ function linkClickHandler(event) {
   }
 
   const targetSection = document.querySelector(`.section--${sectionSelector}`);
-  targetSection.classList.add('section--active');
+  if (targetSection == null) {
+    return;
+
+  } else {
+    targetSection.classList.add('section--active');
+
+  }
 }
 
 const menuLinks = document.querySelectorAll('.menu__link');
@@ -201,3 +208,36 @@ for (let menuLink of menuLinks) {
   menuLink.addEventListener('click', linkClickHandler);
 }
 
+
+//display modal
+
+function closeModal() {
+  document.querySelector('.overlay').classList.remove('overlay--show');
+}
+
+document.querySelectorAll('.button--close').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeModal();
+  });
+});
+
+document.querySelector('.overlay').addEventListener('click', function(e) {
+  if(e.target === this) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    closeModal();
+  }
+});
+
+function openModal(modal) {
+  document.querySelectorAll('.overlay > *').forEach(function(modal) {
+    modal.classList.remove('modal--show');
+  });
+  document.querySelector('.overlay').classList.add('overlay--show');
+  document.querySelector(modal).classList.add('modal--show');
+}
