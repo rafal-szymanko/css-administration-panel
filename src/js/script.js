@@ -198,7 +198,6 @@ function linkClickHandler(event) {
   if (targetSection == null) {
     let modalSelector = clickedElement.getAttribute('href').slice(1);
     let modalClassSelector = `.overlay__modal--${modalSelector}`;
-    console.log(modalClassSelector);
     openModal(modalClassSelector);
 
   } else {
@@ -214,13 +213,15 @@ for (let menuLink of menuLinks) {
 }
 
 
-//display modal
+
+
+//Display modal
 
 function closeModal() {
   document.querySelector('.overlay').classList.remove('overlay--show');
 }
 
-document.querySelectorAll('.button__modal--close').forEach(function(btn) {
+document.querySelectorAll('.button__overlay--close').forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
     closeModal();

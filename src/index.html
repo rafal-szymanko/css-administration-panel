@@ -510,20 +510,26 @@
         <div class="overlay__modal overlay__modal--messenger">
             <div class="overlay__title-wrapper overlay__title-wrapper--border">
                 <h4 class="overlay__title">Online chat with your personal manager</h4>
-                <div class="button button__modal--close">X</div>
+                <div class="button button__overlay--close">X</div>
             </div>
-            <div class="overlay__div-wrapper">
-                <button class="button button__modal button__modal--grey">Cancel</button>
-                <button class="button button__modal">Quit</button>
+            <div class="overlay__div-wrapper overlay__div-wrapper--column">
+                <div class="bubble bubble__overlay"><p class="bubble__text">Hello. Can I help you?</p></div>
+                <div class="bubble bubble__overlay bubble--bottom"><p class="bubble__text bubble__text--white">Hello! I would like to know about Postback.</p></div>
+                <div class="bubble bubble__overlay"><p class="bubble__text">OK. 5 min...</p></div>
+            </div>
+            <div class="overlay__div-wrapper overlay__div-wrapper--around">
+                
+                <input type="text" placeholder="Enter the message..." class="overlay__input">
+                <button class="button button__overlay">Send</button>
             </div>
         </div>
         <div class="overlay__modal overlay__modal--logout">
             <div class="overlay__title-wrapper overlay__title-wrapper--border">
                 <h4 class="overlay__title">Do you really want to Quit?</h4>
             </div>
-            <div class="overlay__div-wrapper">
-                <button class="button button__modal button__modal--grey">Cancel</button>
-                <button class="button button__modal">Quit</button>
+            <div class="overlay__div-wrapper overlay__div-wrapper--end">
+                <button class="button button__overlay button__overlay--grey">Cancel</button>
+                <button class="button button__overlay">Quit</button>
             </div>
         </div>
     </div>

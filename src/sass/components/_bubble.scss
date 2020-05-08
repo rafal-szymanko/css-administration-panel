@@ -1,0 +1,43 @@
+.bubble {
+  position: relative;
+  background: $bubble-background-main;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 30px;
+  margin: 10px;
+
+  &__text {
+    color: $bubble-font-color-main;
+    line-height: 30px;
+    margin: 0;
+    width: auto;
+
+    &--white {
+      color: $bubble-font-color-second;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $bubble-background-main transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -10px;
+    left: 5%;
+  }
+
+  &--bottom {
+    background: $bubble-background-second;
+
+    &:after {
+      border-width: 10px 10px 0;
+      border-color: $bubble-background-second transparent;
+      top: 30px;
+      left: 90%;
+    }
+  }
+}
