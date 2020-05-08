@@ -88,6 +88,8 @@ const myBarChart = new Chart(ctx, {
   type: 'bar',
   data: data,
   options: {
+    maintainAspectRatio: false,
+    responsive: true,
     barValueSpacing: 20,
     scales: {
       yAxes: [{
@@ -194,7 +196,10 @@ function linkClickHandler(event) {
 
   const targetSection = document.querySelector(`.section--${sectionSelector}`);
   if (targetSection == null) {
-    return;
+    let modalSelector = clickedElement.getAttribute('href').slice(1);
+    let modalClassSelector = `.overlay__modal--${modalSelector}`;
+    console.log(modalClassSelector);
+    openModal(modalClassSelector);
 
   } else {
     targetSection.classList.add('section--active');
@@ -215,7 +220,7 @@ function closeModal() {
   document.querySelector('.overlay').classList.remove('overlay--show');
 }
 
-document.querySelectorAll('.button--close').forEach(function(btn) {
+document.querySelectorAll('.button__modal--close').forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
     closeModal();
@@ -236,8 +241,8 @@ document.addEventListener('keyup', function(e) {
 
 function openModal(modal) {
   document.querySelectorAll('.overlay > *').forEach(function(modal) {
-    modal.classList.remove('modal--show');
+    modal.classList.remove('overlay__modal--show');
   });
   document.querySelector('.overlay').classList.add('overlay--show');
-  document.querySelector(modal).classList.add('modal--show');
+  document.querySelector(modal).classList.add('overlay__modal--show');
 }

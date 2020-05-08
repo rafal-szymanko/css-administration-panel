@@ -59,6 +59,24 @@
     right: 0;
     padding: 5px 10px;
   }
+
+  &__modal {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    &--grey {
+      background: $font-color-main;
+    }
+    &--close {
+      color: $font-color-main;
+      background: none;
+      margin: auto;
+      width: 10px;
+      cursor: pointer;
+
+    }
+  }
 }
 
 // // Large devices (desktops, less than 1200px)

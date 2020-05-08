@@ -55,7 +55,7 @@
             <h4 class="menu__title">Your Manager</h4>
             <ul class="menu__list">
                 <li class="menu__item menu__item--green menu__item--hover">
-                    <a href="#manager" class="menu__link menu__link--white menu menu__link--modal"><img class="menu__image menu__image--big"
+                    <a href="#messenger" class="menu__link menu__link--white menu menu__link--modal"><img class="menu__image menu__image--big"
                             src="/images/manager.png" alt=""><span class="menu__text ">Mikhael E.</span></a>
                 </li>
             </ul>          
@@ -117,7 +117,7 @@
                             src="/images/profile.svg" alt="profile image"><span>Profile</span></a>
                 </li>
                 <li class="menu__item menu__item--hover menu__item--display">
-                    <a href="#" class="menu__link"><img class="menu__image menu__image--filter menu__image--white"
+                    <a href="#logout" class="menu__link"><img class="menu__image menu__image--filter menu__image--white"
                             src="/images/quit.svg" alt="logout image"><span>Logout</span></a>
                 </li>
             </ul>
@@ -140,7 +140,7 @@
                         Leonardo DiCaprio</a>
                 </li>
                 <li class="menu__item menu__item--border">
-                    <a href="#" class="menu__link"><img class="menu__image menu__image--filter menu__image--center"
+                    <a href="#logout" class="menu__link"><img class="menu__image menu__image--filter menu__image--center"
                             src="/images/quit.svg" alt="quit image"></a>
                 </li>
             </ul>
@@ -180,8 +180,8 @@
                 <div class="section__div-wrapper section__div-wrapper--start">
                     <h4 class="section__header">Earning charts</h4>
                 </div>
-                <div class="section__div-wrapper">
-                    <canvas class="section__chart" width="200" height="200"></canvas>
+                <div class="section__div-wrapper section__chart-wrapper">
+                    <canvas class="section__chart" width="200" height="150"></canvas>
                 </div>
             </div>
         </section>
@@ -506,12 +506,25 @@
             </div>
         </section>
     </main>
-    <div class="overlay page__modal">
-        <div class="overlay__modal">
-            <div class="button button--close">X</div>
-            <h4>Witaj w modalu</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt aspernatur, facilis in tenetur commodi, perferendis rerum harum inventore, quaerat magnam tempore nobis ab voluptates dolorem doloribus nemo dolore. Beatae!</p>
-            <button>Okay</button>
+    <div class="overlay page__overlay">
+        <div class="overlay__modal overlay__modal--messenger">
+            <div class="overlay__title-wrapper overlay__title-wrapper--border">
+                <h4 class="overlay__title">Online chat with your personal manager</h4>
+                <div class="button button__modal--close">X</div>
+            </div>
+            <div class="overlay__div-wrapper">
+                <button class="button button__modal button__modal--grey">Cancel</button>
+                <button class="button button__modal">Quit</button>
+            </div>
+        </div>
+        <div class="overlay__modal overlay__modal--logout">
+            <div class="overlay__title-wrapper overlay__title-wrapper--border">
+                <h4 class="overlay__title">Do you really want to Quit?</h4>
+            </div>
+            <div class="overlay__div-wrapper">
+                <button class="button button__modal button__modal--grey">Cancel</button>
+                <button class="button button__modal">Quit</button>
+            </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/29dd144af2.js" crossorigin="anonymous"></script>
