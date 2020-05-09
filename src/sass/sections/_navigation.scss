@@ -10,7 +10,7 @@
 
   &--horizontal {
     background-color: $top-navigation-background;
-    border-bottom: $top-navigation-border;
+    border-bottom: $page-border;
   }
 
   &--mobile {
@@ -44,7 +44,7 @@
       flex-direction: row;
       justify-content: flex-end;
       width: 100%;
-      border-left: $top-navigation-border;
+      border-left: $page-border;
     }
   }
 
@@ -62,7 +62,7 @@
       box-sizing: border-box;
 
       &:hover {
-        background: $button-hover;
+        background: $navigation-hover;
         border-left: 3px solid $button-color;
 
         .menu__link--white {
@@ -92,7 +92,7 @@
     }
 
     &--border {
-      border-left: $top-navigation-border;
+      border-left: $page-border;
     }
 
     &--wide {
@@ -151,6 +151,7 @@
   }
 
   &__title {
+    text-align: center;
     &--show {
       display: none;
     }

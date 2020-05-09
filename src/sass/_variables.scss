@@ -4,7 +4,8 @@ $brand-main-color: #ff0000;
 
 $side-navigation-background: #191919;
 $top-navigation-background: #fff;
-$top-navigation-border: 1px solid #E8E8E8;
+
+$page-border: 1px solid #E8E8E8;
 
 $section-border: 0 0 5px 5px #E8E8E8;
 
@@ -12,12 +13,18 @@ $section-border: 0 0 5px 5px #E8E8E8;
 $font-color-main: #979797;
 $font-color-second: #e3e3e3;
 $font-color-third: #fff;
+$font-color-fourth: #F58220;
 
 $button-color: #F58220;
-$button-hover: #282828;
 $button-color-second: #F3F3F1;
+$button-color-third: #979797;
 
+
+
+$navigation-hover: #282828;
 $link-hover: #F1F3F3;
+$button-hover: #fff;
+$button-image-hover: invert(54%) sepia(41%) saturate(2142%) hue-rotate(349deg) brightness(104%) contrast(92%);
 
 $notification-online-color: #04AE00;
 $notification-color: #FFA200;
@@ -37,7 +44,12 @@ $bubble-font-color-second: #fff;
 $paragraph-font-size: 16px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$brand-font: "Open Sans",
+Helvetica,
+Arial;
+$paragraph-font: "Open Sans",
+Helvetica,
+Arial;
 
-$navigation-font: 'Caveat', cursive;
+$navigation-font: 'Caveat',
+cursive;

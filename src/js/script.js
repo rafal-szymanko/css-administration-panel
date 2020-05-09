@@ -1,5 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+
+
 const sideBarHandler = document.querySelector('.fa-bars');
 const mobileBarHandler = document.querySelector('.logo__icon--mobile');
 const navigation = document.querySelector('.menu');
@@ -36,6 +38,9 @@ mobileBarHandler.addEventListener('click', function() {
 });
 
 
+
+
+
 //Input dates
 
 let date = new Date();
@@ -58,6 +63,10 @@ const datepickers = document.querySelectorAll('.calendar__datepicker');
 for (let datepicker of datepickers) {
   datepicker.value = today;
 }
+
+
+
+
 
 // Chart
 
@@ -108,6 +117,9 @@ const myBarChart = new Chart(ctx, {
     }
   }
 });
+
+
+// Table
 
 const tableDetail = document.querySelector('.table__detail');
 
@@ -170,6 +182,10 @@ const tablePayoutDOM = new Tabulator(tablePayout, {
     {title:'Account', field:'account', hozAlign:'left'},
   ],
 });
+
+
+
+
 
 // Display section 
 

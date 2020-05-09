@@ -14,7 +14,7 @@
   //Title
 
   &__title-wrapper {
-    border-bottom: $top-navigation-border;
+    border-bottom: $page-border;
   }
 
   &__title {
@@ -23,7 +23,7 @@
 
   &__div-wrapper {
     &--border {
-      border-bottom: $top-navigation-border;
+      border-bottom: $page-border;
     }
 
     &--relative {
@@ -35,7 +35,7 @@
         background: $link-hover;
 
         .section__image {
-          display: inline;
+          display: inline-block;
         }
       }
     }
@@ -51,7 +51,7 @@
   //Statistic
 
   &__statistic-wrapper {
-    border-bottom: $top-navigation-border;
+    border-bottom: $page-border;
   }
 
   &__header {

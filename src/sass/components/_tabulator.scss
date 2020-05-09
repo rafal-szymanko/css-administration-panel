@@ -73,7 +73,7 @@ $footerActiveColor:#d00 !default; //footer bottom active text color
 
     width: 100%;
 
-    border-bottom: 1px solid $top-navigation-border;
+    border-bottom: 1px solid $page-border;
     background-color: $headerBackgroundColor;
     color: $headerTextColor;
     font-weight: bold;
@@ -664,7 +664,7 @@ $footerActiveColor:#d00 !default; //footer bottom active text color
     box-sizing: border-box;
     padding: 4px;
     border-right: none;
-    border-bottom: $top-navigation-border;
+    border-bottom: $page-border;
     vertical-align: middle;
     white-space: nowrap;
     overflow: hidden;

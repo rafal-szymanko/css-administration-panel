@@ -1,6 +1,6 @@
 .form {
   &__wrapper {
-    border-bottom: $top-navigation-border;
+    border-bottom: $page-border;
   }
 
   &__info {
@@ -14,7 +14,7 @@
   }
 
   &__input {
-    border: $top-navigation-border;
+    border: $page-border;
     border-radius: 5px;
   }
 

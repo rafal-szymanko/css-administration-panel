@@ -1,4 +1,5 @@
 .button {
+  box-sizing: border-box;
   width: 100px;
   height: 36px;
   display: block;
@@ -10,6 +11,14 @@
   line-height: 36px;
   text-align: center;
   color: $font-color-third;
+  transition: 0.3s;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $button-hover;
+    color: $font-color-fourth;
+    border: 1px solid $font-color-fourth;
+  }
 
   &--small {
     width: 36px;
@@ -61,30 +70,34 @@
 
   &__overlay {
     padding: 0;
-    border: none;
     cursor: pointer;
 
     &--grey {
-      background: $font-color-main;
+      background: $button-color-third;
+      &:hover {
+        color: $font-color-main;
+        border: 1px solid $button-color-third;
+      }
     }
-    
-    &--close {
+
+    &--cross {
       color: $font-color-main;
       background: none;
       margin: auto;
       width: 10px;
       cursor: pointer;
+      &:hover {
+        border: 1px solid transparent;
+      }
     }
   }
 }
 
-// // Large devices (desktops, less than 1200px)
-// @media (max-width: 1199.98px) { ... }
 
-// // Large devices (desktops, less than 1200px)
-// @media (max-width: 1199.98px) { ... }
-
-// // Small devices (landscape phones, less than 768px)
-// @media (max-width: 767.98px) { ... }
-
-// Extra small devices (portrait phones, less than 576px)
+.button {
+  &:hover {
+    .button__image {
+      filter: $button-image-hover;
+    }
+  }
+}
