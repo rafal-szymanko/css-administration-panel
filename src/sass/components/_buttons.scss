@@ -38,20 +38,6 @@
     padding-right: 10px;
   }
 
-  &--blue {
-    &:after {
-      @include main-btn-dot;
-      background-color: $dot-color-first;
-    }
-  }
-
-  &--green {
-    &:after {
-      @include main-btn-dot;
-      background-color: $dot-color-second;
-    }
-  }
-
   &--orange {
     width: 60px;
 

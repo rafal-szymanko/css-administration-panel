@@ -27,8 +27,6 @@ $button-image-hover: invert(54%) sepia(41%) saturate(2142%) hue-rotate(349deg) b
 $notification-online-color: #04AE00;
 $notification-color: #FFA200;
 
-
-
 $dot-color-first: #80BFCA;
 $dot-color-second: #FFA200;
 $dot-color-third: #59B66D;
@@ -44,12 +42,7 @@ $bubble-font-color-second: #fff;
 $paragraph-font-size: 16px;
 
 /* Fonts */
-$brand-font: "Open Sans",
-Helvetica,
-Arial;
-$paragraph-font: "Open Sans",
-Helvetica,
-Arial;
+$brand-font: "Open Sans", Helvetica, Arial;
+$paragraph-font: "Open Sans", Helvetica, Arial;
 
-$navigation-font: 'Caveat',
-cursive;
+$navigation-font: 'Caveat', cursive;

@@ -47,7 +47,7 @@
     color: $font-color-fifth;
   }
 
-  &__status{
+  &__status {
     background: $notification-online-color;
     color: $font-color-third;
     width: 80%;
@@ -80,10 +80,11 @@
     width: 100%;
     border: $page-border;
     border-radius: 5px;
+
     &--small {
       width: 35%;
     }
-    
+
   }
 
   &__modal {
@@ -101,6 +102,21 @@
 
     &--messenger {
       width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .overlay {
+    &__input-wrapper {
+      width: 100%;
+      margin-bottom: 10px;
+
+      &--column {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }
