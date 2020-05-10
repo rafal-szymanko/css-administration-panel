@@ -3,7 +3,7 @@
 
 
 const sideBarHandler = document.querySelector('.fa-bars');
-const mobileBarHandler = document.querySelector('.logo__icon--mobile');
+const mobileBarHandler = document.querySelector('.logo__hamburger--mobile');
 const navigation = document.querySelector('.menu');
 const navigationMobile = document.querySelector('.menu__list--mobile');
 const linkNames = document.querySelectorAll('.menu__text');
@@ -189,7 +189,7 @@ const tablePayoutDOM = new Tabulator(tablePayout, {
 
 // Display section 
 
-function linkClickHandler(event) {
+function showSection(event) {
   event.preventDefault();
   const clickedElement = this;
 
@@ -211,24 +211,36 @@ function linkClickHandler(event) {
   }
 
   const targetSection = document.querySelector(`.section--${sectionSelector}`);
-  if (targetSection == null) {
-    let modalSelector = clickedElement.getAttribute('href').slice(1);
-    let modalClassSelector = `.overlay__modal--${modalSelector}`;
-    openModal(modalClassSelector);
 
-  } else {
-    targetSection.classList.add('section--active');
-
-  }
+  targetSection.classList.add('section--active');
 }
 
-const menuLinks = document.querySelectorAll('.menu__link');
-
+const menuLinks = document.querySelectorAll('.menu__link--section');
+console.log(menuLinks);
 for (let menuLink of menuLinks) {
-  menuLink.addEventListener('click', linkClickHandler);
+  menuLink.addEventListener('click', showSection);
 }
 
 
+
+
+
+function showModal(event) {
+  event.preventDefault();
+  const clickedElement = this;
+
+  const modalSelector = clickedElement.getAttribute('href').slice(1);
+  const targetModal = `.overlay__modal--${modalSelector}`;
+  openModal(targetModal);
+
+}
+
+
+const modalLinks = document.querySelectorAll('.menu__link--modal');
+
+for(let modalLink of modalLinks) {
+  modalLink.addEventListener('click', showModal);
+}
 
 
 //Display modal

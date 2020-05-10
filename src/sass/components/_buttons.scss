@@ -74,6 +74,7 @@
 
     &--grey {
       background: $button-color-third;
+
       &:hover {
         color: $font-color-main;
         border: 1px solid $button-color-third;
@@ -86,13 +87,13 @@
       margin: auto;
       width: 10px;
       cursor: pointer;
+
       &:hover {
         border: 1px solid transparent;
       }
     }
   }
 }
-
 
 .button {
   &:hover {
