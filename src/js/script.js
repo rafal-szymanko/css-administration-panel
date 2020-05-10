@@ -231,6 +231,7 @@ function showModal(event) {
 
   const modalSelector = clickedElement.getAttribute('href').slice(1);
   const targetModal = `.overlay__modal--${modalSelector}`;
+  console.log(targetModal);
   openModal(targetModal);
 
 }
@@ -271,6 +272,7 @@ document.addEventListener('keyup', function(e) {
 function openModal(modal) {
   document.querySelectorAll('.overlay > *').forEach(function(modal) {
     modal.classList.remove('overlay__modal--show');
+    console.log(modal);
   });
   document.querySelector('.overlay').classList.add('overlay--show');
   document.querySelector(modal).classList.add('overlay__modal--show');
