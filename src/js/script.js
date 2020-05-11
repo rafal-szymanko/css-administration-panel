@@ -12,7 +12,7 @@ const menuimages = document.querySelectorAll('.menu__image--white');
 const messengerName = document.querySelector('.menu__title');
 const logoName = document.querySelector('.logo__name');
 const messenger = document.querySelector('.menu__messenger');
-const modal = document.querySelector('.menu__link--modal');
+const modal = document.querySelector('.menu__item--modal');
 
 sideBarHandler.addEventListener('click', function(){
   navigation.classList.toggle('menu--show');
@@ -225,28 +225,13 @@ for (let menuLink of menuLinks) {
 
 
 
-function showModal(event) {
-  event.preventDefault();
-  const clickedElement = this;
-
-  const modalSelector = clickedElement.querySelector('.menu__link').getAttribute('href').slice(1);
-  const targetModal = `.overlay__modal--${modalSelector}`;
-  console.log(targetModal);
-  openModal(targetModal);
-
-}
-
-const modalLinks = document.querySelectorAll('.menu__item--modal');
-
-for(let modalLink of modalLinks) {
-  modalLink.addEventListener('click', showModal);
-}
 
 
 //Display modal
 
 function closeModal() {
   document.querySelector('.overlay').classList.remove('overlay--show');
+  document.querySelector('.menu__item--active').classList.remove('menu__item--active');
 }
 
 document.querySelectorAll('.button__overlay--close').forEach(function(btn) {
@@ -267,6 +252,23 @@ document.addEventListener('keyup', function(e) {
     closeModal();
   }
 });
+
+function showModal(event) {
+  event.preventDefault();
+  const clickedElement = this;
+  clickedElement.classList.add('menu__item--active');
+  const modalSelector = clickedElement.querySelector('.menu__link').getAttribute('href').slice(1);
+  const targetModal = `.overlay__modal--${modalSelector}`;
+  
+  openModal(targetModal);
+
+}
+
+const modalLinks = document.querySelectorAll('.menu__item--modal');
+
+for(let modalLink of modalLinks) {
+  modalLink.addEventListener('click', showModal);
+}
 
 function openModal(modal) {
   document.querySelectorAll('.overlay > *').forEach(function(modal) {
