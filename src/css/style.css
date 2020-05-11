@@ -470,6 +470,8 @@ template {
       border-left: 1px solid #E8E8E8; }
     .menu__item--wide {
       width: 200px; }
+    .menu__item--active {
+      background-color: #282828; }
   .menu__link {
     line-height: 34px;
     text-decoration: none;

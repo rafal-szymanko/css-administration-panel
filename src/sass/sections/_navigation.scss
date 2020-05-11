@@ -98,6 +98,9 @@
     &--wide {
       width: 200px;
     }
+    &--active {
+      background-color: $navigation-hover;
+    }
   }
 
   &__link {
