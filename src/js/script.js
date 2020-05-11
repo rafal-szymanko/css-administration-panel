@@ -193,16 +193,16 @@ function showSection(event) {
   event.preventDefault();
   const clickedElement = this;
 
-  const activeLinks = document.querySelectorAll('.menu__link--active');
+  const activeLinks = document.querySelectorAll('.menu__item--active');
 
   for (let activeLink of activeLinks) {
-    activeLink.classList.remove('menu__link--active');
+    activeLink.classList.remove('menu__item--active');
     navigationMobile.classList.remove('menu__list--show');
   }
 
-  clickedElement.classList.add('menu__link--active');
+  clickedElement.classList.add('menu__item--active');
 
-  const sectionSelector = clickedElement.getAttribute('href').slice(1);
+  const sectionSelector = clickedElement.querySelector('.menu__link').getAttribute('href').slice(1);
 
   const activeSections = document.querySelectorAll('.section--active');
 
@@ -215,7 +215,7 @@ function showSection(event) {
   targetSection.classList.add('section--active');
 }
 
-const menuLinks = document.querySelectorAll('.menu__link--section');
+const menuLinks = document.querySelectorAll('.menu__item--section');
 console.log(menuLinks);
 for (let menuLink of menuLinks) {
   menuLink.addEventListener('click', showSection);
@@ -229,15 +229,14 @@ function showModal(event) {
   event.preventDefault();
   const clickedElement = this;
 
-  const modalSelector = clickedElement.getAttribute('href').slice(1);
+  const modalSelector = clickedElement.querySelector('.menu__link').getAttribute('href').slice(1);
   const targetModal = `.overlay__modal--${modalSelector}`;
   console.log(targetModal);
   openModal(targetModal);
 
 }
 
-
-const modalLinks = document.querySelectorAll('.menu__link--modal');
+const modalLinks = document.querySelectorAll('.menu__item--modal');
 
 for(let modalLink of modalLinks) {
   modalLink.addEventListener('click', showModal);
